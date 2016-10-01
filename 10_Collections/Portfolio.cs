@@ -21,7 +21,12 @@ namespace _10_Collections
         }
 
         internal void AddAsset(IAsset asset) {
-            _assets.Add(asset);
+            try
+            {
+                _assets.Add(asset);
+
+            
+
         }
 
         internal IAsset GetAssetByName(string name) {
@@ -34,8 +39,12 @@ namespace _10_Collections
             return element;
         }
 
+        
         internal IList<IAsset> GetAssets() {
+            
             return _assets;
+            
+
         }
 
         internal IList<IAsset> GetAssetsSortedByName() {
@@ -48,5 +57,7 @@ namespace _10_Collections
             _assets.Sort(new StockValueComparator());
             return _assets;
         }
+
+        
     }
 }

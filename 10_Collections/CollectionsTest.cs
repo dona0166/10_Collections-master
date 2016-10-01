@@ -103,7 +103,7 @@ namespace _10_Collections
             portfolio.AddAsset(stockIBM);
             portfolio.AddAsset(stockHP);
 
-            IList<Asset> assets = portfolio.GetAssets();
+            IList<IAsset> assets = portfolio.GetAssets();
             assets.Add(stockYHOO);
         }
 
