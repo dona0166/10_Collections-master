@@ -21,8 +21,7 @@ namespace _10_Collections
         }
 
         internal void AddAsset(IAsset asset) {
-            try
-            {
+            
                 _assets.Add(asset);
 
             
@@ -42,8 +41,7 @@ namespace _10_Collections
         
         internal IList<IAsset> GetAssets() {
             
-            return _assets;
-            
+            return _assets.AsReadOnly();
 
         }
 
@@ -57,6 +55,8 @@ namespace _10_Collections
             _assets.Sort(new StockValueComparator());
             return _assets;
         }
+
+        
 
         
     }
