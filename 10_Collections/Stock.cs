@@ -15,6 +15,7 @@ namespace _10_Collections
         public int NumShares { get; internal set; }
         public double PricePerShare { get; internal set; }
         public string Symbol { get; internal set; }
+        public long Id { get; internal set; }
 
         public double GetValue() {
             return PricePerShare * NumShares;
